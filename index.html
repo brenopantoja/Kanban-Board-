@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Quadro Kanban: Let Code. Drag and Drop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section class="board">
+    <div class="list">
+      <h2>TO DO</h2>
+		
+      <!--<div class="list__content" id="todo">-->
+		     <div class="list__content" id="todo">
+        <article class="cartao" draggable="true">
+          <h3>Arraste o cartão, para outro quadro !</h3>
+			
+        </article>
+      </div>
+		  <div class="task">
+      <h3><label for="task">Adicione uma tarefa</label></h3>
+      <form id="addTask" action="POST">
+        <input id="task" name="task" type="Adicione uma tarefa" autocomplete="off">
+        <button type="submit"><img src="soma.png" alt="Add task" /></button>
+      </form>
+    </div>
+    </div>
+    <div class="list">
+      <h2>DOING</h2>
+      <div class="list__content" id="doing">
+        <article class="cartao" draggable="true">
+          <h3>Arraste a Tarefa para outro quadro</h3>
+        </article>
+        <article class="cartao" draggable="true">
+          <h3>Arraste o quadro para outro quadro, caso seja necessario</h3>
+        </article>
+      </div>
+    </div>
+    <div class="list">
+      <h2>DONE</h2>
+      <div class="list__content" id="done">
+        <article class="cartao" draggable="true">
+          <h3>Tarefa finalizada</h3>
+        </article>
+      </div>
+		  <div class="garbage" >
+      <h3>Garbage</h3>
+			  <div class="list__content" id="garbage"   style="background-color: #4A4B51">
+			  
+		  
+			  </div>
+  </div>
+    </div>
+	
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
