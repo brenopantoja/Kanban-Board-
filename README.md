@@ -6,7 +6,7 @@ Drag and Drop API
 
 It make by brenopantoja
 
-enogh to open in dreamweaver or in web server
+enough to open in dreamweaver or in web server
 
 Other form:
 
